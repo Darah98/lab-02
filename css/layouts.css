@@ -1,0 +1,40 @@
+section{
+    font-size: 1em;
+    height: 320px;
+    width: 250px;
+    float: left;
+    text-align: center;
+    display: block;
+    margin: 15px;
+    padding: 10px;
+}
+img{
+    height: 185px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    clear: both;
+    padding: 1%;
+}
+main p{
+    margin: 10px;
+    font-size: 1.1em;
+}
+section.photo-template {
+    display: none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+h1{
+    font-size: 3em;
+}
+select{
+    margin: 20px;
+    height: 30%;
+    width: 30%;
+}
