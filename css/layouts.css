@@ -1,13 +1,4 @@
-section{
-    font-size: 1em;
-    height: 320px;
-    width: 250px;
-    float: left;
-    text-align: center;
-    display: block;
-    margin: 15px;
-    padding: 10px;
-}
+
 img{
     height: 185px;
     width: 180px;
@@ -15,16 +6,11 @@ img{
     margin-bottom: 10px;
 }
 footer{
-    clear: both;
+   
     padding: 1%;
 }
-main p{
-    margin: 10px;
-    font-size: 1.1em;
-}
-section.photo-template {
-    display: none;
-}
+
+
 header{
     height: 100px;
     width: 100%;
@@ -38,3 +24,4 @@ select{
     height: 30%;
     width: 30%;
 }
+

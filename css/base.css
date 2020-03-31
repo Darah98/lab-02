@@ -5,5 +5,21 @@ body{
     color: #1F1C3F;
 }
 main{
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    display: flex;
+
+}
+button {
+    background: #1F1C3F;
+    width: 150px;
+    height: 30px;
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 3px 2px;
+}
+button:hover{
+    background-color: aliceblue;
+    box-shadow: 1px 3px 2px #1F1C3F;
+    color: #1F1C3F;
 }
