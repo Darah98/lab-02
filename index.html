@@ -3,35 +3,57 @@
 <html>
   <head>
     <title>The Gallery of Horns</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layouts.css">
     <link rel="stylesheet" href="css/modules.css">
     <link rel="stylesheet" href="css/theme.css">
+    <script id="templates" type="text/x-tmpl-mustache">
+      <section class="photo-template {{keyword}}">
+        <h2>{{title}}</h2>
+        <img src="{{image_url}}" alt="">
+        <p>{{description}}</p>
+      </section>
+      
+    </script>
+    <script id="templates2" type="text/x-tmpl-mustache">
+      <option class="options" value="{{name}}">{{keyword}}</option>
+      
+    </script>
+    
   </head>
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
-      <select class="options">
-      <option class="slct" value="default">Filter by Keyword</option>
+      <select class="slct">
+      <!-- <option class="options" value="default">Filter by Keyword</option> -->
       </select> 
+      <select  class="sortSel">
+        <option value="default">Clear Sort</option>
+        <option value="horns">Sort By #Of Horns</option>
+        <option value="name">Sort By Name</option>
+      </select>
+      <button class="btn1" name="" type="button">PAGE 1</button>
+      <button class="btn2" name="" type="button">PAGE 2</button>
     </header>
     <main>
-      <section class="photo-template">
+      <section id="results"></section>
+      <section id="results2"></section>
+      <!-- <section class="photo-template">
         <h2></h2>
         <img src="" alt="">
         <p></p>
-      </section>
+      </section> -->
     </main>
     <footer>
       &copy; 2018 Code Fellows
     </footer>
     
+    <script src="https://unpkg.com/mustache@latest"></script> 
     <script src="data/page-1.json"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
-
